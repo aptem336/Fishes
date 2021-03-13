@@ -5,7 +5,7 @@ package com.example.fishes;
  */
 public class Eat extends Oval {
 
-    Eat(){
+    Eat() {
         super();
         size = 10;
         color = 0x33FFFFFF;

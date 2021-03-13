@@ -4,7 +4,6 @@ import android.annotation.TargetApi;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.os.Build;
-import android.widget.TextView;
 
 /**
  * Created by aptem on 15.07.2016.
@@ -21,14 +20,14 @@ public class Oval extends androidx.appcompat.widget.AppCompatTextView {
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    protected void onDraw(Canvas canvas){
+    protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         Paint paint = new Paint();
         paint.setColor(color);
         canvas.drawOval(0, 0, size, size, paint);
     }
 
-    protected void updateGeom(){
+    protected void updateGeom() {
         setWidth((int) size);
         setHeight((int) size);
         setTranslationX((float) (location.x - size / 2));

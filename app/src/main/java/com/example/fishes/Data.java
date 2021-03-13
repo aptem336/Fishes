@@ -14,4 +14,6 @@ public class Data {
     public static ArrayList<Fish> removedFishes = new ArrayList<>();
     public static ArrayList<Eat> eats = new ArrayList<>();
     public static ArrayList<Eat> removedEats = new ArrayList<>();
+
+    public static String score = "35.0";
 }

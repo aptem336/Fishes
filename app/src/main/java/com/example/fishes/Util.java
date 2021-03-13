@@ -10,7 +10,7 @@ public class Util {
     public static void sleep(int time) {
         try {
             TimeUnit.MILLISECONDS.sleep(time);
-        } catch (InterruptedException ex) {
+        } catch (InterruptedException ignored) {
         }
     }
 }
